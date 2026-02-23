@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -58,37 +59,28 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
-        <div className="glass-card soft-ring rounded-2xl px-5 py-3 mt-2 text-lg font-semibold tracking-wide text-beigeLight">
+        <div className="glass-card soft-ring rounded-2xl p-2 px-4 mt-2 text-lg font-semibold tracking-wide text-beigeLight">
           <span className="font-display text-goldAccent">Sof</span> Mebel
         </div>
 
-        <div className="inline-flex items-center gap-1 rounded-full glass-card soft-ring p-1 backdrop-blur-sm border border-foreground/10">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => switchLanguage(lang.code)}
-              className={`relative px-4 py-1.5 text-sm font-semibold rounded-full transition-all duration-300 ${
-                active === lang.code
-                  ? "bg-goldAccent text-white shadow-lg"
-                  : "text-white/70 hover:text-foreground hover:bg-foreground/5"
-              }`}
-            >
-              {lang.label}
-            </button>
-          ))}
+        <div className="flex align-center">
+          <LanguageSwitcher
+            languages={languages}
+            active={active}
+            switchLanguage={switchLanguage}
+          />
+          <nav className="hidden items-center gap-7 rounded-2xl px-6 py-3 text-sm text-beigeLight md:flex">
+            {navItems.map((item) => (
+              <a
+                key={item.key}
+                href={item.href}
+                className="transition duration-300 hover:text-goldAccent"
+              >
+                {t(item.key)}
+              </a>
+            ))}
+          </nav>
         </div>
-
-        <nav className="hidden items-center gap-7 rounded-2xl px-6 py-3 text-sm text-beigeLight md:flex">
-          {navItems.map((item) => (
-            <a
-              key={item.key}
-              href={item.href}
-              className="transition duration-300 hover:text-goldAccent"
-            >
-              {t(item.key)}
-            </a>
-          ))}
-        </nav>
 
         <button
           type="button"
@@ -123,7 +115,7 @@ export function Navbar() {
       >
         <nav
           id="mobile-menu"
-          className="glass-card soft-ring rounded-2xl p-3 text-beigeLight"
+          className="glass-card soft-ring rounded-2xl p-3 mt-2 text-beigeLight"
         >
           {navItems.map((item) => (
             <a
