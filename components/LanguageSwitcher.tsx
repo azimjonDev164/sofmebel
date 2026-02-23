@@ -1,7 +1,22 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 
-export function LanguageSwitcher({ languages, active, switchLanguage }: any) {
+type Language = {
+  code: string;
+  label: string;
+};
+
+type LanguageSwitcherProps = {
+  languages: Language[];
+  active: string;
+  switchLanguage: (code: string) => void;
+};
+
+export function LanguageSwitcher({
+  languages,
+  active,
+  switchLanguage,
+}: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -19,7 +34,7 @@ export function LanguageSwitcher({ languages, active, switchLanguage }: any) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const activeLang = languages.find((lang: any) => lang.code === active);
+  const activeLang = languages.find((lang) => lang.code === active);
 
   return (
     <div ref={dropdownRef} className="relative inline-block text-sm">
@@ -49,7 +64,7 @@ export function LanguageSwitcher({ languages, active, switchLanguage }: any) {
       {/* Dropdown menu */}
       {isOpen && (
         <div className="absolute right-0 mt-2 w-32 rounded-xl bg-greenDeep/95 shadow-lg backdrop-blur-sm border border-greenDeep/20 z-50 overflow-hidden">
-          {languages.map((lang: any) => (
+          {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => {
