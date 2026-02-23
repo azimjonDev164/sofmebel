@@ -1,0 +1,139 @@
+{
+  "Hero": {
+    "heroImageAlt": "Modern living room",
+  "premiumShowroom": "Premium furniture showroom",
+  "heroTitle": "Make your home comfortable and elegant",
+  "heroSubtitle": "Bring new life to your home with modern and high-quality furniture from Sof Mebel.",
+  "searchLabel": "Search products",
+  "searchPlaceholder": "Search products...",
+  "readMore": "Read more",
+  "productsCount": "500+",
+  "productsLabel": "Products",
+  "supportHours": "24/7",
+  "supportLabel": "Support",
+  "deliveryTime": "10 days",
+  "deliveryLabel": "Average delivery"
+  },
+  "featuredProducts": {
+    "title": "Featured Products",
+    "moreButton": "More products",
+    "products": {
+      "sofa": "Black sofa",
+      "chair": "Black chair",
+      "armchair": "Soft armchair"
+    }
+},
+ "about": {
+    "label": "About Us",
+    "title": "Elegant solutions for every home",
+    "description": "We offer high-quality, modern, and long-lasting furniture to our customers.",
+    "features": {
+      "quality": "High quality",
+      "design": "Custom design",
+      "delivery": "Fast delivery"
+    },
+    "imageAlt": "Premium furniture collection"
+  },
+  "collections": {
+    "label": "Collections",
+    "title": "Special solutions for every room",
+    "viewAll": "All collections",
+    "items": {
+      "living": {
+        "title": "Living Room",
+        "description": "Spacious sofas, modern tables, and comfortable armchairs."
+      },
+      "bedroom": {
+        "title": "Bedroom",
+        "description": "Minimalist and elegant bedroom furniture for relaxation."
+      },
+      "dining": {
+        "title": "Kitchen & Dining",
+        "description": "Table and chair combinations that create a warm atmosphere."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "Why Sof Mebel",
+    "title": "Quality, style and comfort in one place",
+    "highlights": {
+      "materials": {
+        "title": "Natural Materials",
+        "description": "Wood, fabrics and accessories are selected from premium quality-controlled materials."
+      },
+      "custom": {
+        "title": "Custom Design",
+        "description": "Each order is prepared according to your interior style with customized colors, sizes and composition."
+      },
+      "warranty": {
+        "title": "Warranty & Service",
+        "description": "Installation and service support continues even after delivery."
+      }
+    },
+    "stats": {
+      "experience": "Years of experience",
+      "rating": "Customer rating",
+      "projects": "Completed projects"
+    }
+  },
+  "showroom": {
+    "label": "Showroom",
+    "title": "Live interior inspirations",
+    "featured": "Luxury Living Line",
+    "images": {
+      "main": "Premium showroom area",
+      "dining": "Modern dining area",
+      "living": "Minimalist living room interior"
+    }
+  },
+  "onlineMagazine": {
+    "label": "Online Magazine",
+    "title": "Inspirations in Italian and Turkish style",
+    "comingSoonBadge": "Coming Soon",
+    "comingSoonText": "This section will be launched soon.",
+    "items": {
+      "italian": {
+        "title": "Italian Design Notes",
+        "description": "Minimal forms, soft colors and premium composition approaches."
+      },
+      "turkey": {
+        "title": "Turkish Furniture Trends",
+        "description": "Workshop quality, classic elements and modern interior solutions."
+      },
+      "material": {
+        "title": "Material & Texture",
+        "description": "Practical recommendations and case studies on fabric, wood and metal harmony."
+      }
+    }
+  },
+   "cta": {
+    "label": "Free Consultation",
+    "title": "Let’s choose the perfect collection for your interior",
+    "description": "Contact our designer and get a furniture solution that fits your room size, aesthetic style and long-term comfort.",
+    "primaryButton": "Book a Meeting",
+    "secondaryButton": "View Catalog"
+  },
+  "footer": {
+    "description": "Modern furniture solutions for premium interiors.",
+    "links": {
+      "home": "Home",
+      "furniture": "Furniture",
+      "accessories": "Accessories",
+      "magazine": "Online Magazine",
+      "about": "About Us"
+    }
+  },
+  "navbar":{
+  "home": "Home",
+  "furniture": "Furniture",
+  "accessories": "Accessories",
+  "magazine": "Online Magazine",
+  "about": "About Us"
+},
+"onlineMagazine":{
+  "label": "Online Magazine",
+  "title": "Coming Soon",
+  "description": "This section will launch soon.",
+  "backHome": "Back to Home"
+}
+}

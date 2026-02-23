@@ -1,53 +1,48 @@
-import Image from 'next/image';
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-const magazineStacks = [
-  {
-    title: 'Italian Design Notes',
-    description: 'Minimal shakllar, yumshoq ranglar va premium kompozitsiya yondashuvlari.',
-    image: '/images/real/magazine-italian.jpg'
-  },
-  {
-    title: 'Turkiya Mebel Trendlari',
-    description: 'Ustaxona sifati, klassik elementlar va zamonaviy interyerga mos yechimlar.',
-    image: '/images/real/magazine-turkiya.jpg'
-  },
-  {
-    title: 'Material & Texture',
-    description: 'Mato, yog‘och va metal uyg‘unligi bo‘yicha amaliy tavsiyalar va case studylar.',
-    image: '/images/real/magazine-material.jpg'
-  }
-];
+export default function OnlineMagazinePage() {
+  const t = useTranslations("onlineMagazine");
 
-export function OnlineMagazineSection() {
   return (
-    <section id="online-magazine" className="mx-auto mt-10 w-full max-w-7xl px-5 sm:px-8 lg:mt-14 lg:px-10">
-      <div className="rounded-2xl border border-greenDeep/15 bg-[#f6f2e8] p-6 shadow-soft sm:p-8">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-goldAccent">Online Magazine</p>
-            <h2 className="mt-2 font-display text-3xl text-greenDeep sm:text-4xl">Italian va Turkiya uslubida ilhomlar</h2>
-          </div>
-          <span className="inline-flex w-fit items-center rounded-full border border-goldAccent/40 bg-goldAccent/15 px-4 py-1 text-sm font-medium text-greenDeep">
-            Tez orada
-          </span>
-        </div>
-        <p className="mt-4 text-sm text-greenDeep/75">Tez orada ishga tushadi bu qism.</p>
+    <>
+      <main className="relative min-h-screen overflow-hidden pb-10">
+        <div className="pointer-events-none absolute left-0 top-32 h-72 w-72 rounded-full bg-goldAccent/20 blur-3xl" />
+        <div className="pointer-events-none absolute right-0 top-64 h-96 w-96 rounded-full bg-greenDeep/10 blur-3xl" />
 
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {magazineStacks.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-2xl border border-greenDeep/10 bg-white/70 p-4 transition duration-300 hover:-translate-y-0.5 hover:border-goldAccent/40"
-            >
-              <div className="relative mb-3 h-36 overflow-hidden rounded-xl border border-greenDeep/10">
-                <Image src={item.image} alt={item.title} fill className="object-cover" />
+        <div className="relative mx-auto w-full max-w-[1600px] px-3 pt-3 sm:px-5 sm:pt-5">
+          <Navbar />
+
+          <section className="relative mt-28 overflow-hidden rounded-2xl border border-greenDeep/10 bg-[#f5f2eb] p-8 shadow-soft sm:p-10 lg:mt-32 lg:p-14">
+            <div className="pointer-events-none absolute -left-16 -top-16 h-44 w-44 rounded-full bg-goldAccent/20 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-20 right-10 h-56 w-56 rounded-full bg-greenDeep/10 blur-3xl" />
+
+            <div className="relative z-10 mx-auto max-w-3xl text-center">
+              <p className="text-xs uppercase tracking-[0.24em] text-goldAccent">
+                {t("label")}
+              </p>
+              <h1 className="mt-3 font-display text-4xl text-greenDeep sm:text-5xl">
+                {t("title")}
+              </h1>
+              <p className="mt-4 text-base text-greenDeep/80 sm:text-lg">
+                {t("description")}
+              </p>
+
+              <div className="mt-8">
+                <Link
+                  href="/#bosh-sahifa"
+                  className="inline-flex rounded-2xl bg-greenDeep px-6 py-3 text-sm font-semibold text-beigeLight transition duration-300 hover:-translate-y-0.5 hover:bg-[#294d38]"
+                >
+                  {t("backHome")}
+                </Link>
               </div>
-              <h3 className="font-display text-xl text-greenDeep">{item.title}</h3>
-              <p className="mt-2 text-sm text-greenDeep/75">{item.description}</p>
-            </article>
-          ))}
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
+      </main>
+      <Footer />
+    </>
   );
 }

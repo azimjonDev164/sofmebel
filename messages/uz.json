@@ -1,0 +1,139 @@
+{
+  "Hero": {
+    "heroImageAlt": "Zamonaviy yashash xonasi",
+  "premiumShowroom": "Premium mebel showroom",
+  "heroTitle": "Uyingizni qulay va nafis qiling",
+  "heroSubtitle": "Sof Mebel bilan zamonaviy va sifatli mebellar orqali uyingizga yangi hayot bag‘ishlang.",
+  "searchLabel": "Mahsulot qidirish",
+  "searchPlaceholder": "Mahsulot qidirish...",
+  "readMore": "Batafsil",
+  "productsCount": "500+",
+  "productsLabel": "Mahsulot",
+  "supportHours": "24/7",
+  "supportLabel": "Qo‘llab-quvvatlash",
+  "deliveryTime": "10 kun",
+  "deliveryLabel": "O‘rtacha yetkazish"
+  },
+ "featuredProducts": {
+    "title": "Tanlangan mahsulotlar",
+    "moreButton": "Ko‘proq mahsulot",
+    "products": {
+      "sofa": "Qora divan",
+      "chair": "Qora stul",
+      "armchair": "Yumshoq kreslo"
+    }
+  },
+   "about": {
+    "label": "Biz haqimizda",
+    "title": "Har bir uy uchun nafis yechim",
+    "description": "Biz mijozlarimizga sifatli, zamonaviy va uzoq xizmat qiladigan mebellarni taklif qilamiz.",
+    "features": {
+      "quality": "Yuqori sifat",
+      "design": "Individual dizayn",
+      "delivery": "Tez yetkazib berish"
+    },
+    "imageAlt": "Sifatli mebel kolleksiyasi"
+  },
+  "collections": {
+    "label": "Kolleksiyalar",
+    "title": "Har xona uchun maxsus yechim",
+    "viewAll": "Barcha kolleksiyalar",
+    "items": {
+      "living": {
+        "title": "Yashash xonasi",
+        "description": "Keng divanlar, zamonaviy stol va qulay kreslolar to‘plami."
+      },
+      "bedroom": {
+        "title": "Yotoqxona",
+        "description": "Dam olish uchun minimalist va nafis yotoqxona mebellari."
+      },
+      "dining": {
+        "title": "Oshxona va ovqatlanish",
+        "description": "Issiq muhit yaratadigan stol-stul kombinatsiyalari."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "label": "Nega Sof Mebel",
+    "title": "Sifat, uslub va qulaylik bir joyda",
+    "highlights": {
+      "materials": {
+        "title": "Tabiiy materiallar",
+        "description": "Yog‘och, mato va aksessuarlar sifat nazoratidan o‘tgan premium materiallardan tanlanadi."
+      },
+      "custom": {
+        "title": "Moslashtirilgan dizayn",
+        "description": "Har bir buyurtma interyer uslubingizga mos rang, o‘lcham va kompozitsiya bilan tayyorlanadi."
+      },
+      "warranty": {
+        "title": "Kafolat va servis",
+        "description": "Yetkazib berishdan keyin ham montaj va servis qo‘llab-quvvatlovi davom etadi."
+      }
+    },
+    "stats": {
+      "experience": "Yillik tajriba",
+      "rating": "Mijoz bahosi",
+      "projects": "Tayyor loyiha"
+    }
+  },
+  "showroom": {
+    "label": "Showroom",
+    "title": "Jonli interyer ilhomlari",
+    "featured": "Luxury Living Line",
+    "images": {
+      "main": "Premium showroom zonasi",
+      "dining": "Zamonaviy ovqatlanish zonasi",
+      "living": "Minimalist mehmonxona interyeri"
+    }
+  },
+  "onlineMagazine": {
+    "label": "Online Magazine",
+    "title": "Italian va Turkiya uslubida ilhomlar",
+    "comingSoonBadge": "Tez orada",
+    "comingSoonText": "Tez orada ishga tushadi bu qism.",
+    "items": {
+      "italian": {
+        "title": "Italian Design Notes",
+        "description": "Minimal shakllar, yumshoq ranglar va premium kompozitsiya yondashuvlari."
+      },
+      "turkey": {
+        "title": "Turkiya Mebel Trendlari",
+        "description": "Ustaxona sifati, klassik elementlar va zamonaviy interyerga mos yechimlar."
+      },
+      "material": {
+        "title": "Material & Texture",
+        "description": "Mato, yog‘och va metal uyg‘unligi bo‘yicha amaliy tavsiyalar va case studylar."
+      }
+    }
+  },
+  "cta": {
+    "label": "Bepul maslahat",
+    "title": "Interyeringiz uchun mos kolleksiyani birga tanlaymiz",
+    "description": "Dizaynerimiz bilan bog‘laning va xonangiz o‘lchamiga mos, estetik va uzoq xizmat qiladigan mebel yechimini oling.",
+    "primaryButton": "Uchrashuv belgilash",
+    "secondaryButton": "Katalogni ko‘rish"
+  },
+  "footer": {
+    "description": "Premium interyer uchun zamonaviy mebel yechimlari.",
+    "links": {
+      "home": "Bosh sahifa",
+      "furniture": "Mebel",
+      "accessories": "Aksessuarlar",
+      "magazine": "Online Magazine",
+      "about": "Biz haqimizda"
+    }
+  },
+  "navbar":{
+  "home": "Bosh sahifa",
+  "furniture": "Mebel",
+  "accessories": "Aksessuarlar",
+  "magazine": "Online Magazine",
+  "about": "Biz haqimizda"
+},
+"onlineMagazine":{
+  "label": "Online Magazine",
+  "title": "Tez kunda",
+  "description": "Tez kunda ishga tushadi bu qism.",
+  "backHome": "Bosh sahifaga qaytish"
+}
+}

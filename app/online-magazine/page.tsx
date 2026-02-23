@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import Link from "next/link";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 export default function OnlineMagazinePage() {
   return (
@@ -17,9 +17,15 @@ export default function OnlineMagazinePage() {
             <div className="pointer-events-none absolute -bottom-20 right-10 h-56 w-56 rounded-full bg-greenDeep/10 blur-3xl" />
 
             <div className="relative z-10 mx-auto max-w-3xl text-center">
-              <p className="text-xs uppercase tracking-[0.24em] text-goldAccent">Online Magazine</p>
-              <h1 className="mt-3 font-display text-4xl text-greenDeep sm:text-5xl">Tez kunda</h1>
-              <p className="mt-4 text-base text-greenDeep/80 sm:text-lg">Tez kunda ishga tushadi bu qism.</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-goldAccent">
+                Online Magazine
+              </p>
+              <h1 className="mt-3 font-display text-4xl text-greenDeep sm:text-5xl">
+                Tez kunda
+              </h1>
+              <p className="mt-4 text-base text-greenDeep/80 sm:text-lg">
+                Tez kunda ishga tushadi bu qism.
+              </p>
 
               <div className="mt-8">
                 <Link
